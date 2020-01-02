@@ -33,13 +33,11 @@ class Player(pygame.sprite.Sprite):
         self.rect.x = 350
         self.levens = 5.0
         self.score = 0
-        self.highScoreText = open('highscore.txt', 'r+')
-        self.highScore = int(self.highScoreText.read(1))
+        self.highScore = 0
 
     def update(self):
-        self.highScoreText = open('highscore.txt', 'r+')
-        self.highScore = int(self.highScoreText.read(1))
-        self.highScore += 1
+        if self.score > self.highScore:
+            self.highScore = self.score
         self.highScoreText.write(str(self.highScore))
         keys = pygame.key.get_pressed()
         if keys[pygame.K_RIGHT]:
