@@ -38,7 +38,6 @@ class Player(pygame.sprite.Sprite):
     def update(self):
         if self.score > self.highScore:
             self.highScore = self.score
-        self.highScoreText.write(str(self.highScore))
         keys = pygame.key.get_pressed()
         if keys[pygame.K_RIGHT]:
             self.rect.x += self.speedRight
