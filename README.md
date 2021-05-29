@@ -1,4 +1,3 @@
-# Toerist Amsterdam
 You need pygame and python 3 to run this game.
 
 ### Download python 3:
