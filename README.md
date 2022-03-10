@@ -12,3 +12,5 @@ Open cmd and type: `python -m pip install pygame`
 
 #### MacOS
 Open terminal and type: `pip3 install pygame`
+
+Dont play this game, I just wanted to try pygame. Its a really bad game!
